@@ -1,0 +1,103 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.container{
+    width: 600px;
+    margin: auto;
+    padding: 5px;
+    overflow: auto;
+}
+.borderatas{
+width: 600px;
+height: 30PX;
+background-color: rgb(148, 189, 236);
+float: top;
+}
+.borderbawah{
+width: 600px;
+height: 20PX;
+background-color: rgb(148, 189, 236);
+float:inline-end;
+}
+.atas{
+width: 600px;
+height: 200PX;
+background-color: rgb(170, 177, 72);
+float: top;
+}
+.tengah{
+width: 600px;
+height: 600PX;
+background-color: rgb(181, 218, 228);
+float: top;
+}
+.kotak{
+width: 150px;
+height: 150PX;
+background-color: rgb(238, 255, 0);
+float: left;
+}
+
+.kotak1{
+width: 150px;
+height: 150PX;
+background-color: rgb(158, 148, 0);
+float: left;
+}
+
+.kotak2{
+width: 150px;
+height: 150PX;
+background-color: rgb(37, 91, 206);
+float: left;
+}
+.kotak3{
+width: 150px;
+height: 150PX;
+background-color: rgb(81, 175, 86);
+float: left;
+}
+
+h3{
+  font-family: "Georgia", serif; 
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+.header ul {
+  margin: -45px;
+  padding-right: 45px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 30px; 
+}
+
+.header ul li {
+  display: inline;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.header ul li a {
+  text-decoration: none; 
+  color: rgb(255, 255, 255);  
+}
