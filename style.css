@@ -16,6 +16,12 @@
 .cf:after {
     clear: both;
 }
+body {
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* cegah scroll horizontal */
+}
 
 .container{
     width: 600px;
@@ -24,77 +30,108 @@
     overflow: auto;
 }
 .borderatas{
-width: 600px;
-height: 30PX;
-background-color: rgb(148, 189, 236);
-float: top;
+    width: 600px;
+    height: 30PX;
+    background-color: rgb(148, 189, 236);
+    float: top;
+    border-radius: 10px 10px 0 0;
 }
 .borderbawah{
-width: 600px;
-height: 20PX;
-background-color: rgb(148, 189, 236);
-float:inline-end;
+    width: 600px;
+    height: 20PX;
+    background-color: rgb(148, 189, 236);
+    float:inline-end;
+    border-radius: 0px 0px 10px 10px;
 }
 .atas{
-width: 600px;
-height: 200PX;
-background-color: rgb(170, 177, 72);
-float: top;
+    width: 600px;
+    height: 200PX;
+    background-color: rgb(170, 177, 72);
+    float: top;
 }
+.atas img{
+    width: 150px;        
+    height: 200px;       
+    object-fit:fill;  
+    display: block;
+    float: right;
+}
+
+.atas p {
+  margin-top: 0px;
+  color: white;
+  font-size: 24px;
+  font-family: "Georgia", serif; 
+}
+
 .tengah{
-width: 600px;
-height: 600PX;
-background-color: rgb(181, 218, 228);
-float: top;
+    width: 600px;
+    height: 600PX;
+    background-color: rgb(181, 218, 228);
+    float: top;
 }
+
 .kotak{
-width: 150px;
-height: 150PX;
-background-color: rgb(238, 255, 0);
-float: left;
+    width: 150px;
+    height: 150PX;
+    background-color: rgb(238, 255, 0);
+    float: left;
 }
 
 .kotak1{
-width: 150px;
-height: 150PX;
-background-color: rgb(158, 148, 0);
-float: left;
+    width: 150px;
+    height: 150PX;
+    background-color: rgb(158, 148, 0);
+    float: left;
 }
 
 .kotak2{
-width: 150px;
-height: 150PX;
-background-color: rgb(37, 91, 206);
-float: left;
+    width: 150px;
+    height: 150PX;
+    background-color: rgb(37, 91, 206);
+    float: left;
 }
+
 .kotak3{
-width: 150px;
-height: 150PX;
-background-color: rgb(81, 175, 86);
-float: left;
+    width: 150px;
+    height: 150PX;
+    background-color: rgb(81, 175, 86);
+    float: left;
 }
 
 h3{
-  font-family: "Georgia", serif; 
-  font-size: 24px;
-  font-weight: bold;
-  font-style: italic;
-  color: white;
+    font-family: "Georgia", serif; 
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+  width: 100%;      /* pastikan tidak lebih lebar */
+  box-sizing: border-box; /* biar padding ikut dihitung */
 }
 
 .header ul {
-  margin: -45px;
-  padding-right: 45px;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end; 
-  gap: 30px; 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+    gap: 30px;
 }
 
 .header ul li {
   display: inline;
-  margin-right: 40px;
+  margin-top: 5px;
+  margin-right: 20px;
   text-decoration: none;
+  font-family: "Georgia", serif; 
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
 }
 
 .header ul li a {
