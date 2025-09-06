@@ -21,6 +21,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* cegah scroll horizontal */
+  background-image:linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), 
+  url(Foto/Gambar\ Komik.jpg);
+  background-size: contain;
 }
 
 .container{
@@ -34,14 +37,13 @@ body {
     height: 30PX;
     background-color: rgb(148, 189, 236);
     float: top;
-    border-radius: 10px 10px 0 0;
+    margin-top: 40px;
 }
 .borderbawah{
     width: 600px;
     height: 20PX;
     background-color: rgb(148, 189, 236);
     float:inline-end;
-    border-radius: 0px 0px 10px 10px;
 }
 .atas{
     width: 600px;
@@ -61,7 +63,7 @@ body {
   margin-top: 0px;
   color: white;
   font-size: 24px;
-  font-family: "Georgia", serif; 
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .tengah{
@@ -70,6 +72,14 @@ body {
     background-color: rgb(181, 218, 228);
     float: top;
 }
+
+.tengah p {
+  margin-top: 0px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
 
 .kotak{
     width: 150px;
@@ -100,7 +110,7 @@ body {
 }
 
 h3{
-    font-family: "Georgia", serif; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 24px;
     font-weight: bold;
     font-style: italic;
@@ -128,8 +138,8 @@ h3{
   margin-top: 5px;
   margin-right: 20px;
   text-decoration: none;
-  font-family: "Georgia", serif; 
-  font-size: 14px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 16px;
   font-weight: bold;
   color: white;
 }
