@@ -51,6 +51,7 @@ body {
     background-color: rgb(170, 177, 72);
     float: top;
 }
+
 .atas img{
     width: 150px;        
     height: 200px;       
@@ -88,11 +89,25 @@ body {
     float: left;
 }
 
+.kotak img{
+    width: 150px;        
+    height: 150px;       
+    object-fit:contain;  
+    display: block;
+}
+
 .kotak1{
     width: 150px;
     height: 150PX;
     background-color: rgb(158, 148, 0);
     float: left;
+}
+
+.kotak1 img{
+    width: 150px;        
+    height: 150px;       
+    object-fit:contain;  
+    display: block;
 }
 
 .kotak2{
@@ -102,11 +117,25 @@ body {
     float: left;
 }
 
+.kotak2 img{
+    width: 150px;        
+    height: 150px;       
+    object-fit:contain;  
+    display: block;
+}
+
 .kotak3{
     width: 150px;
     height: 150PX;
     background-color: rgb(81, 175, 86);
     float: left;
+}
+
+.kotak3 img{
+    width: 150px;        
+    height: 150px;       
+    object-fit:contain;  
+    display: block;
 }
 
 h3{
