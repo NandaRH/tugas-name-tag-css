@@ -1,88 +1,131 @@
-/* Aturan dasar untuk seluruh halaman */
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f7f6;
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  background-image: url(Foto/Hexa\ Blue.png);
+  background-size: contain;
+  margin: 0;
+  padding: 20px;
 }
 
-/* Container utama CV */
+/* Tombol Back */
+.back-btn {
+  display: inline-block;
+  background: #0097a7;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+}
+
+
 .cv-container {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 20px;
+/* Sidebar kiri */
+.cv-left {
+  background: #0097a7;
+  color: white;
+  padding: 30px 20px;
+  width: 30%;
+  text-align: center;
 }
 
-.profile-info h1 {
-    margin: 0;
+.cv-left img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid white;
+}
+
+.cv-left h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  padding-bottom: 5px;
+}
+
+.skills {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Konten kanan */
+.cv-right {
+  padding: 30px;
+  width: 70%;
+  color: #333;
+}
+
+.cv-right h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #111;
+}
+
+.cv-right p a{
+    text-decoration: none;
     color: #333;
-    font-size: 2.5em;
+    text-align: center;
 }
 
-.job-title {
-    color: #555;
-    font-style: italic;
-    margin-top: 5px;
+.cv-right p img {
+    width: 20px;
+    height: 20px;
 }
 
-.profile-image-container {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #66b2b2;
+
+.cv-right h2 {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #0097a7;
+  border-bottom: 2px solid #0097a7;
+  display: inline-block;
+  padding-bottom: 3px;
 }
 
-.profile-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.cv-right p {
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-/* Gaya untuk setiap section */
-section {
-    padding-top: 20px;
+.experience, .education {
+  margin-top: 20px;
 }
 
-h2 {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+.job {
+  margin-bottom: 15px;
 }
 
-.job h3, .education h3 {
-    margin-bottom: 5px;
-    color: #444;
+.job h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #444;
 }
 
-.date {
-    font-style: italic;
-    color: #777;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li {
-    margin-bottom: 8px;
+.job span {
+  font-size: 13px;
+  color: #777;
 }
