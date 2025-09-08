@@ -38,12 +38,14 @@ body {
     background-color: rgb(148, 189, 236);
     float: top;
     margin-top: 40px;
+    border-radius: 10px 10px 0px 0px;
 }
 .borderbawah{
     width: 600px;
     height: 20PX;
     background-color: rgb(148, 189, 236);
     float:inline-end;
+    border-radius: 0px 0px 10px 10px;
 }
 .atas{
     width: 600px;
